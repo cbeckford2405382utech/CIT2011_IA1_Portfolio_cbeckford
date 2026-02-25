@@ -1,134 +1,197 @@
-/* =========================
-   Chevarie Beckford
-   Student ID: 2405382
-   CIT2011 – Individual Assignment #1
-   ========================= */
+/* ==========================================
+   NAME: Chevarie Beckford
+   ID#: 2405382
+   COURSE: CIT2011 Web Programming
+   ASSIGNMENT: IA#1 Portfolio (Semester 2 AY25-26)
+   ========================================== */
 
+/* ---------- CSS Variables (Colour Scheme) ---------- */
 :root{
-  --bg:#0f172a;
-  --panel:#111c33;
-  --card:#0b1224;
-  --text:#e6eefc;
-  --muted:#b8c7e6;
-  --accent:#38bdf8;
-  --border:rgba(56,189,248,.25);
+  --bg: #0b1220;
+  --panel: #101b2f;
+  --panel2:#0e1730;
+  --text:#e8eefc;
+  --muted:#b9c7e6;
+  --accent:#2bd3ff;
+  --accent2:#7c5cff;
+  --border: rgba(255,255,255,0.10);
+  --shadow: 0 10px 35px rgba(0,0,0,0.35);
+
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
 }
 
-*{margin:0;padding:0;box-sizing:border-box}
+/* ---------- Base ---------- */
+*{ box-sizing: border-box; }
 
-body{
-  font-family: Arial, Helvetica, sans-serif;
-  background: radial-gradient(1200px 600px at 10% 10%, rgba(56,189,248,.18), transparent 55%),
-              radial-gradient(900px 500px at 90% 0%, rgba(99,102,241,.16), transparent 60%),
+html, body{
+  margin:0;
+  padding:0;
+  font-family: var(--font);
+  background: radial-gradient(1200px 700px at 20% 10%, rgba(43,211,255,0.18), transparent 55%),
+              radial-gradient(1000px 600px at 80% 0%, rgba(124,92,255,0.16), transparent 55%),
               var(--bg);
-  color:var(--text);
-  line-height:1.6;
-  min-height:100vh;
+  color: var(--text);
 }
 
-a{color:var(--accent);text-decoration:none}
-a:hover{text-decoration:underline}
+img{ max-width:100%; display:block; }
 
-/* Layout */
+a{
+  color: var(--accent);
+  text-decoration: none;
+}
+a:hover{ text-decoration: underline; } /* pseudo-class #1 */
+
+/* ---------- Layout Wrapper ---------- */
 .container{
-  width:min(1050px, 92%);
-  margin-inline:auto;
+  width: min(1050px, 94%);
+  margin: 28px auto 60px;
 }
 
-header{
-  padding:28px 0 18px;
+/* ---------- Header / Hero ---------- */
+.site-header{
+  background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 22px 20px;
+  box-shadow: var(--shadow);
 }
 
 .brand{
-  background:rgba(255,255,255,.02);
-  border:1px solid var(--border);
-  border-radius:16px;
-  padding:22px;
-  box-shadow:0 10px 40px rgba(0,0,0,.25);
-}
-
-.brand h1{font-size:2.1rem;letter-spacing:.4px}
-.brand p{color:var(--muted);margin-top:6px}
-
-/* Nav */
-nav{
-  margin-top:14px;
   display:flex;
+  gap:14px;
+  align-items:center;
+  justify-content:space-between;
   flex-wrap:wrap;
-  gap:10px;
-}
-nav a{
-  padding:8px 14px;
-  border:1px solid var(--border);
-  border-radius:999px;
-  background:rgba(56,189,248,.06);
-  transition: transform .2s ease, background .2s ease;
-}
-nav a:hover{
-  background:rgba(56,189,248,.18);
-  transform: translateY(-1px);
 }
 
-/* Main / Cards */
-main{padding:18px 0 36px}
-
-.card{
-  background:rgba(255,255,255,.02);
-  border:1px solid rgba(255,255,255,.06);
-  border-radius:16px;
-  padding:22px;
-  margin-top:18px;
-  box-shadow:0 10px 35px rgba(0,0,0,.22);
+.logo{
+  display:flex;
+  align-items:center;
+  gap:12px;
 }
 
-.card h2{
-  font-size:1.5rem;
-  margin-bottom:12px;
-}
-
-.grid{
+.logo-badge{
+  width:44px;
+  height:44px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
   display:grid;
-  grid-template-columns: 1fr;
-  gap:16px;
+  place-items:center;
+  background: rgba(43,211,255,0.12);
+  box-shadow: 0 10px 25px rgba(43,211,255,0.10);
+  font-weight: 800;
+  letter-spacing: 0.5px;
 }
 
-.info{
-  display:grid;
-  grid-template-columns: 1fr;
+.brand h1{
+  margin:0;
+  font-size: clamp(24px, 3.3vw, 38px);
+}
+
+.subtitle{
+  margin: 8px 0 0;
+  color: var(--muted);
+}
+
+/* ---------- Nav ---------- */
+.nav{
+  margin-top: 16px;
+  display:flex;
   gap:10px;
+  flex-wrap:wrap;
 }
 
-.badge{
+.nav a{
   display:inline-block;
-  padding:4px 10px;
-  border:1px solid var(--border);
-  border-radius:999px;
-  color:var(--muted);
-  font-size:.9rem;
+  padding: 9px 14px;
+  border: 1px solid rgba(43,211,255,0.45);
+  border-radius: 999px;
+  background: rgba(43,211,255,0.06);
+  transition: transform 0.18s ease, background 0.18s ease, border 0.18s ease; /* animation */
 }
 
-.profile{
-  width:170px;
-  height:170px;
-  object-fit:cover;
-  border-radius:50%;
-  border:2px solid rgba(56,189,248,.35);
-  box-shadow:0 12px 30px rgba(0,0,0,.35);
+.nav a:hover{
+  background: rgba(43,211,255,0.15);
+  transform: translateY(-2px);
 }
 
+.nav a:active{ transform: translateY(0); } /* pseudo-class #2 */
+
+/* ---------- Cards / Sections ---------- */
+.section{
+  margin-top: 18px;
+  padding: 18px 18px 16px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+}
+
+.section h2{
+  margin: 0 0 12px;
+  font-size: 22px;
+}
+
+/* ---------- Grid (Flexbox/Grid requirement) ---------- */
+.grid-2{
+  display:grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 16px;
+}
+
+/* ---------- Lists & Table ---------- */
+ul, ol{ margin-top: 8px; }
+
+.table{
+  width:100%;
+  border-collapse: collapse;
+  overflow:hidden;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+
+.table th, .table td{
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+  text-align:left;
+}
+
+.table th{
+  background: rgba(43,211,255,0.10);
+}
+
+/* ---------- Buttons (Optional) ---------- */
+.btn{
+  display:inline-block;
+  margin-top: 10px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(124,92,255,0.55);
+  background: rgba(124,92,255,0.12);
+  color: var(--text);
+  transition: background 0.18s ease, transform 0.18s ease;
+}
+.btn:hover{
+  background: rgba(124,92,255,0.20);
+  transform: translateY(-2px);
+}
+
+/* ---------- Footer ---------- */
 footer{
-  padding:22px 0;
-  color:var(--muted);
+  margin-top: 18px;
+  color: var(--muted);
   text-align:center;
-  border-top:1px solid rgba(255,255,255,.08);
+  font-size: 14px;
 }
 
-/* Responsive requirements */
-@media (min-width: 600px){
-  .grid{grid-template-columns: 210px 1fr; align-items:start}
-  .brand h1{font-size:2.35rem}
+/* ---------- Responsive (min 600px mobile + min 950px desktop handled) ---------- */
+@media (max-width: 950px){
+  .grid-2{ grid-template-columns: 1fr; }
 }
 
-@media (min-width: 950px){
-  .info{grid-template-columns: 1fr 1fr}
+@media (max-width: 600px){
+  .nav a{ width: 100%; text-align:center; }
 }
+
+
+
