@@ -1,136 +1,226 @@
-<!--
-  NAME: Chevarie Beckford
-  ID#: 2405382
-  COURSE: CIT2011 Web Programming
-  ASSIGNMENT: IA#1 Portfolio (Semester 2 AY25-26)
--->
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!--
+    Name: Chevarie Beckford
+    Student ID: 2405382
+    Course: CIT2011 Web Programming (Semester 2 AY 25-26)
+    Assignment: Individual Assignment #1 (IA#1)
+  -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chevarie Beckford | Portfolio</title>
+
+  <!-- IMPORTANT:
+       index.html is inside /Codes
+       style.css is in the ROOT of the repo
+       so the correct path from /Codes is ../style.css
+  -->
   <link rel="stylesheet" href="../style.css">
 </head>
+
 <body>
-  <div class="container">
+  <a class="skip-link" href="#main">Skip to content</a>
 
-    <header class="site-header">
+  <header class="site-header">
+    <div class="container header-grid">
       <div class="brand">
-        <div class="logo">
-          <div class="logo-badge">CB</div>
-          <div>
-            <h1>Chevarie Beckford</h1>
-            <p class="subtitle">BSc Computing Student | UTech, Jamaica</p>
-          </div>
+        <div class="logo" aria-hidden="true">CB</div>
+        <div>
+          <h1>Chevarie Beckford</h1>
+          <p class="subtitle">BSc Computing Student | UTech, Jamaica</p>
         </div>
-
-        <!-- External hyperlink requirement -->
-        <a class="btn" href="https://www.utech.edu.jm/" target="_blank" rel="noopener">UTech Website</a>
       </div>
 
-      <nav class="nav" aria-label="Primary">
-        <a href="index.html">Home</a>
-        <a href="resume.html">Resume</a>
-        <a href="personality.html">Personality</a>
-        <a href="personal-development.html">Personal Development</a>
-        <a href="ai-idea.html">AI Idea</a>
-        <a href="references.html">References</a>
+      <nav class="nav" aria-label="Primary Navigation">
+        <a class="nav-link active" href="index.html">Home</a>
+        <a class="nav-link" href="resume.html">Resume</a>
+        <a class="nav-link" href="personality.html">Personality</a>
+        <a class="nav-link" href="personal-development.html">Personal Development</a>
+        <a class="nav-link" href="ai-idea.html">AI Idea</a>
+        <a class="nav-link" href="references.html">References</a>
       </nav>
+    </div>
+  </header>
 
-      <!-- Bookmark link requirement -->
-      <p class="subtitle">
-        Quick jump: <a href="#contact">Go to Contact</a>
-      </p>
-    </header>
-
-    <main>
-
-      <section class="section" id="about">
+  <main id="main" class="container">
+    <!-- Bookmark/Internal Anchor Link target -->
+    <section class="card" id="about">
+      <header class="card-header">
         <h2>About Me</h2>
+        <p class="muted">A quick introduction and key details.</p>
+      </header>
 
-        <div class="grid-2">
+      <article class="card-body">
+        <div class="about-grid">
           <div>
+            <!-- 3 paragraphs requirement -->
             <p>
-              My name is <strong>Chevarie Beckford</strong>, a <strong>BSc Computing</strong> student at the
-              <strong>University of Technology, Jamaica</strong>. I’m focused on becoming a software engineer,
-              especially building reliable systems that connect to the computer engineering side of technology.
-            </p>
-            <p>
-              I’m adaptable — I can adjust in any environment — and I take my growth seriously. I’m disciplined
-              about learning and improving, because I want to become the type of engineer who can design systems
-              that actually work under pressure.
-            </p>
-            <p>
-              What keeps me motivated is music like <em>“Legend”</em> by Chronixx. It pushes me to stay confident,
-              stay grounded, and keep moving forward. That kind of message matters to me personally and culturally.
+              My name is <strong>Chevarie Beckford</strong>, and I’m currently pursuing a <strong>BSc in Computing</strong> at the
+              <strong>University of Technology, Jamaica</strong>. I enjoy building clean, structured systems that solve real problems,
+              and I’m especially interested in how software connects with the computer engineering side of technology.
             </p>
 
-            <ul>
-              <li><strong>Student ID:</strong> 2405382</li>
-              <li><strong>Programme:</strong> BSc Computing</li>
-              <li><strong>University:</strong> University of Technology, Jamaica</li>
-              <li><strong>Career Goal:</strong> Software Engineer (systems + computer engineering focus)</li>
+            <p>
+              One of my strongest traits is that I can <strong>adjust in any environment</strong>. Whether it’s new tools, new people,
+              or new deadlines, I adapt fast and stay focused. I also consider myself <strong>ambitious</strong> and <strong>disciplined</strong>—
+              when I set a goal, I push until it’s complete.
+            </p>
+
+            <p>
+              My long-term goal is to become a <strong>Software Engineer</strong> who develops different kinds of systems—especially
+              systems that feel “engineered”: reliable, efficient, and built to scale. I also have a strong interest in studying
+              <strong>Artificial Intelligence (AI)</strong> because I want to understand how smart systems can support people and improve decision-making.
+            </p>
+
+            <hr class="divider">
+
+            <!-- Demographic data -->
+            <ul class="info-list">
+              <li><span>Full Name:</span> Chevarie Beckford</li>
+              <li><span>Student ID:</span> 2405382</li>
+              <li><span>University:</span> University of Technology, Jamaica</li>
+              <li><span>Programme:</span> BSc Computing</li>
+              <li><span>Email:</span> <a href="mailto:chevariebeckford1@gmail.com">chevariebeckford1@gmail.com</a></li>
             </ul>
+
+            <!-- External hyperlink requirement -->
+            <p class="muted small">
+              External link: <a href="https://www.utech.edu.jm" target="_blank" rel="noopener">UTech Jamaica Official Website</a>
+            </p>
           </div>
 
-          <aside>
-            <!-- Image must link to local mail client -->
-            <a href="mailto:chevariebeckford1@gmail.com">
-              <img src="../Assets/me.jpg" alt="Photo of Chevarie Beckford">
-            </a>
-            <p class="subtitle">
-              Click the photo to email me: <a href="mailto:chevariebeckford1@gmail.com">chevariebeckford1@gmail.com</a>
-            </p>
+          <aside class="profile">
+            <figure class="profile-figure">
+              <!-- Image requirement + alt attribute + link to local mail client -->
+              <a href="mailto:chevariebeckford1@gmail.com" title="Click to email me">
+                <!-- IMPORTANT:
+                     Your image is in /Assets
+                     This index.html is in /Codes
+                     So correct path is ../Assets/me.jpg
+                -->
+                <img src="../Assets/me.jpg" alt="Photo of Chevarie Beckford" class="profile-img">
+              </a>
+              <figcaption class="muted small">
+                Click my photo to open your email client and message me.
+              </figcaption>
+            </figure>
+
+            <div class="mini-card">
+              <h3 class="mini-title">Quick Links</h3>
+              <ul class="mini-links">
+                <li><a href="#favorites">Jump to Favorites (Bookmark Link)</a></li>
+                <li><a href="#contact">Jump to Contact</a></li>
+              </ul>
+            </div>
           </aside>
         </div>
-      </section>
+      </article>
+    </section>
 
-      <section class="section" id="favorites">
+    <!-- Favorites section to satisfy list + table/card style -->
+    <section class="card" id="favorites">
+      <header class="card-header">
         <h2>Favorites</h2>
+        <p class="muted">A few things that inspire and motivate me.</p>
+      </header>
 
-        <!-- Table requirement -->
-        <table class="table">
-          <thead>
-            <tr>
-              <th>Category</th>
-              <th>My Favorite</th>
-              <th>Why It Matters</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Book</td>
-              <td>The 48 Laws of Power</td>
-              <td>Strategy, awareness, and understanding people.</td>
-            </tr>
-            <tr>
-              <td>Movie</td>
-              <td>Gods of Egypt</td>
-              <td>Vision, mythology, and epic storytelling.</td>
-            </tr>
-            <tr>
-              <td>Song</td>
-              <td>“Legend” — Chronixx</td>
-              <td>Motivation, confidence, and identity.</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
+      <div class="card-body">
+        <!-- List requirement -->
+        <h3 class="section-title">Top 3</h3>
+        <ol class="nice-list">
+          <li><strong>Book:</strong> The 48 Laws of Power</li>
+          <li><strong>Movie:</strong> Gods of Egypt</li>
+          <li><strong>Song:</strong> “Legend” — Chronixx</li>
+        </ol>
 
-      <section class="section" id="contact">
-        <h2>Contact</h2>
-        <p>
-          Email: <a href="mailto:chevariebeckford1@gmail.com">chevariebeckford1@gmail.com</a>
+        <p class="muted">
+          “Legend” motivates me because it connects to identity, resilience, and the mindset of staying strong and focused
+          no matter the environment.
         </p>
-      </section>
 
-    </main>
+        <!-- Table OR card-style section requirement (we’ll include both, table is safest) -->
+        <h3 class="section-title">Favorites Table</h3>
+        <div class="table-wrap" role="region" aria-label="Favorites Table">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>Favorite</th>
+                <th>Why it matters</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Book</td>
+                <td>The 48 Laws of Power</td>
+                <td>Strategy, awareness, and disciplined thinking.</td>
+              </tr>
+              <tr>
+                <td>Movie</td>
+                <td>Gods of Egypt</td>
+                <td>Big vision, epic story, powerful themes.</td>
+              </tr>
+              <tr>
+                <td>Song</td>
+                <td>Legend — Chronixx</td>
+                <td>Motivation, resilience, and cultural connection.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
-    <footer>
-      <p>&copy; 2026 Chevarie Beckford</p>
-    </footer>
+        <h3 class="section-title">Role Model</h3>
+        <div class="cards-3">
+          <article class="mini-card">
+            <h4>Elon Musk</h4>
+            <p class="muted">
+              I admire the innovation mindset, systems thinking, and pushing ideas into reality at scale.
+            </p>
+          </article>
 
-  </div>
+          <article class="mini-card">
+            <h4>Top Trait</h4>
+            <p class="muted">
+              Adjusting in any environment — staying calm and effective even when things change fast.
+            </p>
+          </article>
+
+          <article class="mini-card">
+            <h4>Quote (inspired vibe)</h4>
+            <p class="muted">
+              Stay focused. Stay disciplined. Keep moving forward until the work matches the vision.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="card" id="contact">
+      <header class="card-header">
+        <h2>Contact</h2>
+        <p class="muted">Let’s connect.</p>
+      </header>
+
+      <div class="card-body">
+        <p>
+          Email:
+          <a class="pill" href="mailto:chevariebeckford1@gmail.com">chevariebeckford1@gmail.com</a>
+        </p>
+
+        <!-- internal anchor link exists already (bookmark link) -->
+        <p class="muted small">
+          Bookmark link example: <a href="#favorites">Go to Favorites</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-flex">
+      <p>© 2026 Chevarie Beckford</p>
+      <p class="muted small">CIT2011 IA#1 Portfolio</p>
+    </div>
+  </footer>
 </body>
 </html>
