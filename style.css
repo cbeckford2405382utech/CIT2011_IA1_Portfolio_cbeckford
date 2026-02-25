@@ -1,87 +1,321 @@
-/* 
-Name: Chevarie Beckford
-ID: 2405382
-Course: CIT2011 Web Programming
-Assignment: IA#1 Portfolio
-*/
+/* ==========================================
+   Name: Chevarie Beckford
+   ID: 2405382
+   Course: CIT2011 Web Programming
+   Assignment: IA#1 Portfolio
+   ========================================== */
 
-/* Base Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* ---------- Reset ---------- */
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+
+:root{
+  --bg:#0b1220;
+  --panel:#0f1a33;
+  --panel2:#0e1730;
+  --card: rgba(255,255,255,0.03);
+  --border: rgba(255,255,255,0.10);
+  --text:#e8eefc;
+  --muted:#b9c7e6;
+  --accent:#2bd3ff;
+  --accent2:#7c5cff;
+  --shadow: 0 10px 35px rgba(0,0,0,0.35);
+
+  --radius: 18px;
+  --radius2: 12px;
+
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #0d1b2a;
-    color: white;
-    line-height: 1.6;
-    padding: 20px;
+/* ---------- Base ---------- */
+body{
+  font-family: var(--font);
+  color: var(--text);
+  line-height: 1.65;
+  background:
+    radial-gradient(1200px 700px at 20% 10%, rgba(43,211,255,0.18), transparent 55%),
+    radial-gradient(1000px 600px at 80% 0%, rgba(124,92,255,0.16), transparent 55%),
+    var(--bg);
 }
 
-/* Header */
-header {
-    text-align: center;
-    margin-bottom: 20px;
+img{ max-width: 100%; display: block; }
+a{ color: var(--accent); text-decoration: none; }
+a:hover{ text-decoration: underline; } /* pseudo-class */
+
+/* ---------- Utilities ---------- */
+.container{
+  width: min(1050px, 94%);
+  margin: 22px auto 70px;
 }
 
-/* Navigation */
-nav {
-    text-align: center;
-    margin-bottom: 20px;
+.muted{ color: var(--muted); }
+.small{ font-size: 0.92rem; }
+
+hr.divider{
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 16px 0;
 }
 
-nav a {
-    display: inline-block;
-    margin: 5px;
-    padding: 10px 15px;
-    background-color: #1b263b;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: 0.3s;
+.section-title{
+  margin-top: 18px;
+  margin-bottom: 8px;
+  font-size: 1.1rem;
 }
 
-nav a:hover {
-    background-color: #415a77;
+/* Skip link */
+.skip-link{
+  position: absolute;
+  left: -999px;
+  top: -999px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: rgba(43,211,255,0.18);
+  border: 1px solid rgba(43,211,255,0.35);
+}
+.skip-link:focus{
+  left: 16px;
+  top: 16px;
+  z-index: 9999;
 }
 
-/* Sections */
-section {
-    background-color: #1b263b;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
+/* ---------- Header ---------- */
+.site-header{
+  margin: 22px auto 18px;
+  padding: 18px 0 0;
 }
 
-/* Image */
-img {
-    width: 200px;
-    border-radius: 10px;
-    margin-top: 10px;
+.header-grid{
+  padding: 18px;
+  border-radius: var(--radius);
+  background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
 }
 
-/* Table */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
+.brand{
+  display:flex;
+  align-items:center;
+  gap: 14px;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-table, th, td {
-    border: 1px solid white;
+.logo{
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: rgba(43,211,255,0.12);
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+  box-shadow: 0 12px 25px rgba(43,211,255,0.10);
 }
 
-th, td {
-    padding: 10px;
-    text-align: left;
+.site-header h1{
+  margin: 0;
+  font-size: clamp(24px, 3.2vw, 40px);
 }
 
-/* Footer */
-footer {
-    text-align: center;
-    margin-top: 20px;
+.subtitle{
+  margin: 6px 0 0;
+  color: var(--muted);
+}
+
+/* ---------- Navigation ---------- */
+.nav{
+  margin-top: 14px;
+  display:flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.nav-link{
+  display:inline-block;
+  padding: 9px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(43,211,255,0.40);
+  background: rgba(43,211,255,0.06);
+  transition: transform 0.18s ease, background 0.18s ease;
+}
+
+.nav-link:hover{
+  background: rgba(43,211,255,0.15);
+  transform: translateY(-2px);
+}
+
+.nav-link.active{
+  border-color: rgba(124,92,255,0.55);
+  background: rgba(124,92,255,0.14);
+}
+
+/* ---------- Cards ---------- */
+.card{
+  margin-top: 18px;
+  padding: 18px;
+  border-radius: var(--radius);
+  background: var(--card);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+.card-header h2{
+  margin: 0 0 6px;
+  font-size: 1.45rem;
+}
+.card-header p{ margin: 0; }
+
+.card-body{ margin-top: 14px; }
+
+/* ---------- About grid ---------- */
+.about-grid{
+  display:grid;
+  grid-template-columns: 1.35fr 0.65fr;
+  gap: 18px;
+  align-items: start;
+}
+
+.profile{
+  display: grid;
+  gap: 14px;
+}
+
+.profile-figure{
+  margin: 0;
+  padding: 14px;
+  border-radius: var(--radius);
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(0,0,0,0.18);
+}
+
+.profile-img{
+  width: 100%;
+  max-width: 260px;
+  margin: 0 auto;
+  border-radius: 16px;
+  border: 1px solid rgba(43,211,255,0.35);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.35);
+}
+
+/* ---------- Info list ---------- */
+.info-list{
+  list-style: none;
+  padding-left: 0;
+  margin: 10px 0 0;
+  display:grid;
+  gap: 8px;
+}
+
+.info-list li{
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(0,0,0,0.16);
+}
+
+.info-list span{
+  color: var(--muted);
+  display:inline-block;
+  min-width: 120px;
+}
+
+/* ---------- Mini cards ---------- */
+.mini-card{
+  padding: 14px;
+  border-radius: var(--radius);
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(0,0,0,0.16);
+}
+
+.mini-title{
+  margin: 0 0 8px;
+  font-size: 1.05rem;
+}
+
+.mini-links{
+  margin: 0;
+  padding-left: 18px;
+}
+.mini-links li{ margin: 6px 0; }
+
+/* ---------- Lists ---------- */
+.nice-list{
+  padding-left: 20px;
+  margin: 10px 0 0;
+}
+.nice-list li{ margin: 7px 0; }
+
+/* ---------- Table ---------- */
+.table-wrap{
+  margin-top: 10px;
+  overflow-x: auto;
+  border-radius: var(--radius2);
+  border: 1px solid rgba(255,255,255,0.10);
+}
+
+.data-table{
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 560px;
+}
+
+.data-table th, .data-table td{
+  padding: 12px 12px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255,255,255,0.10);
+}
+
+.data-table th{
+  background: rgba(43,211,255,0.10);
+}
+
+.data-table tr:hover td{
+  background: rgba(255,255,255,0.03);
+}
+
+/* ---------- 3 cards row ---------- */
+.cards-3{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 10px;
+}
+
+/* ---------- Pill ---------- */
+.pill{
+  display:inline-block;
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(43,211,255,0.40);
+  background: rgba(43,211,255,0.06);
+}
+
+/* ---------- Footer ---------- */
+.site-footer{
+  margin-top: 18px;
+  padding: 18px 0 30px;
+  border-top: 1px solid rgba(255,255,255,0.10);
+}
+
+.footer-flex{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 950px){
+  .about-grid{ grid-template-columns: 1fr; }
+  .cards-3{ grid-template-columns: 1fr; }
+}
+
+@media (max-width: 600px){
+  .nav-link{ width: 100%; text-align: center; }
+  .container{ width: 94%; margin: 18px auto 60px; }
 }
 
 
