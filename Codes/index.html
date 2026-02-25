@@ -1,74 +1,136 @@
+<!--
+  NAME: Chevarie Beckford
+  ID#: 2405382
+  COURSE: CIT2011 Web Programming
+  ASSIGNMENT: IA#1 Portfolio (Semester 2 AY25-26)
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Chevarie Beckford | Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- IMPORTANT: CSS is in root -->
-    <link rel="stylesheet" href="../style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chevarie Beckford | Portfolio</title>
+  <link rel="stylesheet" href="../style.css">
 </head>
-
 <body>
+  <div class="container">
 
-<header>
-    <div class="container brand">
-        <h1>Chevarie Beckford</h1>
-        <p>BSc Computing Student | University of Technology, Jamaica</p>
+    <header class="site-header">
+      <div class="brand">
+        <div class="logo">
+          <div class="logo-badge">CB</div>
+          <div>
+            <h1>Chevarie Beckford</h1>
+            <p class="subtitle">BSc Computing Student | UTech, Jamaica</p>
+          </div>
+        </div>
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="resume.html">Resume</a>
-            <a href="personality.html">Personality</a>
-            <a href="personal-dev.html">Personal Development</a>
-            <a href="ai-idea.html">AI Idea</a>
-            <a href="references.html">References</a>
-        </nav>
-    </div>
-</header>
+        <!-- External hyperlink requirement -->
+        <a class="btn" href="https://www.utech.edu.jm/" target="_blank" rel="noopener">UTech Website</a>
+      </div>
 
-<main class="container">
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="resume.html">Resume</a>
+        <a href="personality.html">Personality</a>
+        <a href="personal-development.html">Personal Development</a>
+        <a href="ai-idea.html">AI Idea</a>
+        <a href="references.html">References</a>
+      </nav>
 
-    <section class="card">
+      <!-- Bookmark link requirement -->
+      <p class="subtitle">
+        Quick jump: <a href="#contact">Go to Contact</a>
+      </p>
+    </header>
+
+    <main>
+
+      <section class="section" id="about">
         <h2>About Me</h2>
 
-        <div class="grid">
+        <div class="grid-2">
+          <div>
+            <p>
+              My name is <strong>Chevarie Beckford</strong>, a <strong>BSc Computing</strong> student at the
+              <strong>University of Technology, Jamaica</strong>. I’m focused on becoming a software engineer,
+              especially building reliable systems that connect to the computer engineering side of technology.
+            </p>
+            <p>
+              I’m adaptable — I can adjust in any environment — and I take my growth seriously. I’m disciplined
+              about learning and improving, because I want to become the type of engineer who can design systems
+              that actually work under pressure.
+            </p>
+            <p>
+              What keeps me motivated is music like <em>“Legend”</em> by Chronixx. It pushes me to stay confident,
+              stay grounded, and keep moving forward. That kind of message matters to me personally and culturally.
+            </p>
 
-            <div>
-                <img src="../Assets/me.JPG" alt="Chevarie Beckford" class="profile">
-            </div>
+            <ul>
+              <li><strong>Student ID:</strong> 2405382</li>
+              <li><strong>Programme:</strong> BSc Computing</li>
+              <li><strong>University:</strong> University of Technology, Jamaica</li>
+              <li><strong>Career Goal:</strong> Software Engineer (systems + computer engineering focus)</li>
+            </ul>
+          </div>
 
-            <div>
-                <div class="info">
-                    <p><strong>Full Name:</strong> Chevarie Beckford</p>
-                    <p><strong>Student ID:</strong> 2405382</p>
-                    <p><strong>Programme:</strong> BSc Computing</p>
-                    <p><strong>University:</strong> University of Technology, Jamaica</p>
-                </div>
-
-                <p style="margin-top:15px;">
-                    I am an ambitious and disciplined computing student with a strong interest in software engineering
-                    and artificial intelligence. My long-term goal is to become a software engineer focused on
-                    developing reliable systems that integrate computer engineering principles.
-                </p>
-
-                <p style="margin-top:10px;">
-                    I adapt easily to new environments and challenges. My role model is Elon Musk due to his
-                    innovation mindset and large-scale systems thinking. My favorite book is
-                    <em>The 48 Laws of Power</em>, and my favorite movie is <em>Gods of Egypt</em>.
-                    The song <em>Legend</em> by Chronixx motivates me because it reflects identity,
-                    resilience, and purpose.
-                </p>
-            </div>
-
+          <aside>
+            <!-- Image must link to local mail client -->
+            <a href="mailto:chevariebeckford1@gmail.com">
+              <img src="../Assets/me.jpg" alt="Photo of Chevarie Beckford">
+            </a>
+            <p class="subtitle">
+              Click the photo to email me: <a href="mailto:chevariebeckford1@gmail.com">chevariebeckford1@gmail.com</a>
+            </p>
+          </aside>
         </div>
-    </section>
+      </section>
 
-</main>
+      <section class="section" id="favorites">
+        <h2>Favorites</h2>
 
-<footer>
-    <p>&copy; 2026 Chevarie Beckford | CIT2011</p>
-</footer>
+        <!-- Table requirement -->
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>My Favorite</th>
+              <th>Why It Matters</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Book</td>
+              <td>The 48 Laws of Power</td>
+              <td>Strategy, awareness, and understanding people.</td>
+            </tr>
+            <tr>
+              <td>Movie</td>
+              <td>Gods of Egypt</td>
+              <td>Vision, mythology, and epic storytelling.</td>
+            </tr>
+            <tr>
+              <td>Song</td>
+              <td>“Legend” — Chronixx</td>
+              <td>Motivation, confidence, and identity.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
 
+      <section class="section" id="contact">
+        <h2>Contact</h2>
+        <p>
+          Email: <a href="mailto:chevariebeckford1@gmail.com">chevariebeckford1@gmail.com</a>
+        </p>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Chevarie Beckford</p>
+    </footer>
+
+  </div>
 </body>
 </html>
