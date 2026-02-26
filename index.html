@@ -1,226 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!--
-    Name: Chevarie Beckford
-    Student ID: 2405382
-    Course: CIT2011 Web Programming (Semester 2 AY 25-26)
-    Assignment: Individual Assignment #1 (IA#1)
-  -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chevarie Beckford | Portfolio</title>
+    <!--
+        Name: Chevarie Beckford
+        Student ID: 2405382
+        Course: CIT2011 Web Programming
+        Assignment: IA#1 Portfolio
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chevarie Beckford | Portfolio</title>
 
-  <!-- IMPORTANT:
-       index.html is inside /Codes
-       style.css is in the ROOT of the repo
-       so the correct path from /Codes is ../style.css
-  -->
-  <link rel="stylesheet" href="../style.css">
+    <!-- CSS is now in ROOT -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="site-header">
-    <div class="container header-grid">
-      <div class="brand">
-        <div class="logo" aria-hidden="true">CB</div>
-        <div>
-          <h1>Chevarie Beckford</h1>
-          <p class="subtitle">BSc Computing Student | UTech, Jamaica</p>
-        </div>
-      </div>
+<header>
+    <h1>Chevarie Beckford</h1>
+    <p>BSc Computing Student | UTech, Jamaica</p>
+</header>
 
-      <nav class="nav" aria-label="Primary Navigation">
-        <a class="nav-link active" href="index.html">Home</a>
-        <a class="nav-link" href="resume.html">Resume</a>
-        <a class="nav-link" href="personality.html">Personality</a>
-        <a class="nav-link" href="personal-development.html">Personal Development</a>
-        <a class="nav-link" href="ai-idea.html">AI Idea</a>
-        <a class="nav-link" href="references.html">References</a>
-      </nav>
-    </div>
-  </header>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="Codes/resume.html">Resume</a>
+    <a href="Codes/personality.html">Personality</a>
+    <a href="Codes/personal-development.html">Personal Development</a>
+    <a href="Codes/ai-idea.html">AI Idea</a>
+    <a href="Codes/references.html">References</a>
+</nav>
 
-  <main id="main" class="container">
-    <!-- Bookmark/Internal Anchor Link target -->
-    <section class="card" id="about">
-      <header class="card-header">
-        <h2>About Me</h2>
-        <p class="muted">A quick introduction and key details.</p>
-      </header>
+<section>
+    <h2>About Me</h2>
 
-      <article class="card-body">
-        <div class="about-grid">
-          <div>
-            <!-- 3 paragraphs requirement -->
-            <p>
-              My name is <strong>Chevarie Beckford</strong>, and I’m currently pursuing a <strong>BSc in Computing</strong> at the
-              <strong>University of Technology, Jamaica</strong>. I enjoy building clean, structured systems that solve real problems,
-              and I’m especially interested in how software connects with the computer engineering side of technology.
-            </p>
+    <p>
+        My name is Chevarie Beckford and I am currently pursuing a Bachelor of Science in Computing 
+        at the University of Technology, Jamaica.
+    </p>
 
-            <p>
-              One of my strongest traits is that I can <strong>adjust in any environment</strong>. Whether it’s new tools, new people,
-              or new deadlines, I adapt fast and stay focused. I also consider myself <strong>ambitious</strong> and <strong>disciplined</strong>—
-              when I set a goal, I push until it’s complete.
-            </p>
+    <p>
+        I am adaptable, ambitious, and disciplined. I aim to become a software engineer 
+        focused on building reliable and scalable systems.
+    </p>
 
-            <p>
-              My long-term goal is to become a <strong>Software Engineer</strong> who develops different kinds of systems—especially
-              systems that feel “engineered”: reliable, efficient, and built to scale. I also have a strong interest in studying
-              <strong>Artificial Intelligence (AI)</strong> because I want to understand how smart systems can support people and improve decision-making.
-            </p>
+    <p>
+        I am also highly interested in Artificial Intelligence and how intelligent systems 
+        can improve efficiency and solve real-world problems.
+    </p>
 
-            <hr class="divider">
+    <!-- Image (now path is different because index is in root) -->
+    <a href="mailto:chevariebeckford1@gmail.com">
+        <img src="Assets/me.jpg" alt="Photo of Chevarie Beckford">
+    </a>
 
-            <!-- Demographic data -->
-            <ul class="info-list">
-              <li><span>Full Name:</span> Chevarie Beckford</li>
-              <li><span>Student ID:</span> 2405382</li>
-              <li><span>University:</span> University of Technology, Jamaica</li>
-              <li><span>Programme:</span> BSc Computing</li>
-              <li><span>Email:</span> <a href="mailto:chevariebeckford1@gmail.com">chevariebeckford1@gmail.com</a></li>
-            </ul>
+</section>
 
-            <!-- External hyperlink requirement -->
-            <p class="muted small">
-              External link: <a href="https://www.utech.edu.jm" target="_blank" rel="noopener">UTech Jamaica Official Website</a>
-            </p>
-          </div>
+<section id="favorites">
+    <h2>Favorites</h2>
 
-          <aside class="profile">
-            <figure class="profile-figure">
-              <!-- Image requirement + alt attribute + link to local mail client -->
-              <a href="mailto:chevariebeckford1@gmail.com" title="Click to email me">
-                <!-- IMPORTANT:
-                     Your image is in /Assets
-                     This index.html is in /Codes
-                     So correct path is ../Assets/me.jpg
-                -->
-                <img src="../Assets/me.jpg" alt="Photo of Chevarie Beckford" class="profile-img">
-              </a>
-              <figcaption class="muted small">
-                Click my photo to open your email client and message me.
-              </figcaption>
-            </figure>
+    <ul>
+        <li><strong>Book:</strong> The 48 Laws of Power</li>
+        <li><strong>Movie:</strong> Gods of Egypt</li>
+        <li><strong>Song:</strong> Legend – Chronixx</li>
+    </ul>
 
-            <div class="mini-card">
-              <h3 class="mini-title">Quick Links</h3>
-              <ul class="mini-links">
-                <li><a href="#favorites">Jump to Favorites (Bookmark Link)</a></li>
-                <li><a href="#contact">Jump to Contact</a></li>
-              </ul>
-            </div>
-          </aside>
-        </div>
-      </article>
-    </section>
+    <h3>Favorites Table</h3>
 
-    <!-- Favorites section to satisfy list + table/card style -->
-    <section class="card" id="favorites">
-      <header class="card-header">
-        <h2>Favorites</h2>
-        <p class="muted">A few things that inspire and motivate me.</p>
-      </header>
+    <table>
+        <tr>
+            <th>Category</th>
+            <th>Favorite</th>
+        </tr>
+        <tr>
+            <td>Book</td>
+            <td>The 48 Laws of Power</td>
+        </tr>
+        <tr>
+            <td>Movie</td>
+            <td>Gods of Egypt</td>
+        </tr>
+        <tr>
+            <td>Song</td>
+            <td>Legend – Chronixx</td>
+        </tr>
+    </table>
+</section>
 
-      <div class="card-body">
-        <!-- List requirement -->
-        <h3 class="section-title">Top 3</h3>
-        <ol class="nice-list">
-          <li><strong>Book:</strong> The 48 Laws of Power</li>
-          <li><strong>Movie:</strong> Gods of Egypt</li>
-          <li><strong>Song:</strong> “Legend” — Chronixx</li>
-        </ol>
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email: 
+        <a href="mailto:chevariebeckford1@gmail.com">
+            chevariebeckford1@gmail.com
+        </a>
+    </p>
+</section>
 
-        <p class="muted">
-          “Legend” motivates me because it connects to identity, resilience, and the mindset of staying strong and focused
-          no matter the environment.
-        </p>
+<footer>
+    <p>&copy; 2026 Chevarie Beckford</p>
+</footer>
 
-        <!-- Table OR card-style section requirement (we’ll include both, table is safest) -->
-        <h3 class="section-title">Favorites Table</h3>
-        <div class="table-wrap" role="region" aria-label="Favorites Table">
-          <table class="data-table">
-            <thead>
-              <tr>
-                <th>Category</th>
-                <th>Favorite</th>
-                <th>Why it matters</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Book</td>
-                <td>The 48 Laws of Power</td>
-                <td>Strategy, awareness, and disciplined thinking.</td>
-              </tr>
-              <tr>
-                <td>Movie</td>
-                <td>Gods of Egypt</td>
-                <td>Big vision, epic story, powerful themes.</td>
-              </tr>
-              <tr>
-                <td>Song</td>
-                <td>Legend — Chronixx</td>
-                <td>Motivation, resilience, and cultural connection.</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <h3 class="section-title">Role Model</h3>
-        <div class="cards-3">
-          <article class="mini-card">
-            <h4>Elon Musk</h4>
-            <p class="muted">
-              I admire the innovation mindset, systems thinking, and pushing ideas into reality at scale.
-            </p>
-          </article>
-
-          <article class="mini-card">
-            <h4>Top Trait</h4>
-            <p class="muted">
-              Adjusting in any environment — staying calm and effective even when things change fast.
-            </p>
-          </article>
-
-          <article class="mini-card">
-            <h4>Quote (inspired vibe)</h4>
-            <p class="muted">
-              Stay focused. Stay disciplined. Keep moving forward until the work matches the vision.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="card" id="contact">
-      <header class="card-header">
-        <h2>Contact</h2>
-        <p class="muted">Let’s connect.</p>
-      </header>
-
-      <div class="card-body">
-        <p>
-          Email:
-          <a class="pill" href="mailto:chevariebeckford1@gmail.com">chevariebeckford1@gmail.com</a>
-        </p>
-
-        <!-- internal anchor link exists already (bookmark link) -->
-        <p class="muted small">
-          Bookmark link example: <a href="#favorites">Go to Favorites</a>
-        </p>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-flex">
-      <p>© 2026 Chevarie Beckford</p>
-      <p class="muted small">CIT2011 IA#1 Portfolio</p>
-    </div>
-  </footer>
 </body>
 </html>
