@@ -1,104 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!--
-        Name: Chevarie Beckford
-        Student ID: 2405382
-        Course: CIT2011 Web Programming
-        Assignment: IA#1 Portfolio
-    -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chevarie Beckford | Portfolio</title>
-
-    <!-- CSS is now in ROOT -->
-    <link rel="stylesheet" href="style.css">
+  <!--
+    Name: Chevarie Beckford
+    Student ID: 2405382
+    Course: CIT2011 Web Programming
+    Semester: 2 AY 2025-2026
+    Assignment: IA#1 Portfolio
+  -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chevarie Beckford | Portfolio</title>
+  <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
+  <header class="site-header" id="top">
+    <div class="brand">
+      <div class="logo" aria-hidden="true">CB</div>
+      <div>
+        <h1>Chevarie Beckford</h1>
+        <p class="subtitle">BSc Computing Student | UTech, Jamaica</p>
+      </div>
+    </div>
 
-<header>
-    <h1>Chevarie Beckford</h1>
-    <p>BSc Computing Student | UTech, Jamaica</p>
-</header>
+    <nav class="nav">
+      <a class="active" href="index.html">Home</a>
+      <a href="resume.html">Resume</a>
+      <a href="personality.html">Personality</a>
+      <a href="personal-development.html">Personal Development</a>
+      <a href="ai-idea.html">AI Idea</a>
+      <a href="references.html">References</a>
+      <a class="nav-btn" href="#contact">Contact</a>
+    </nav>
+  </header>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="Codes/resume.html">Resume</a>
-    <a href="Codes/personality.html">Personality</a>
-    <a href="Codes/personal-development.html">Personal Development</a>
-    <a href="Codes/ai-idea.html">AI Idea</a>
-    <a href="Codes/references.html">References</a>
-</nav>
+  <main class="container">
+    <section class="card hero">
+      <div class="hero-text">
+        <h2>About Me</h2>
 
-<section>
-    <h2>About Me</h2>
+        <!-- 3 paragraphs required -->
+        <p>
+          My name is <strong>Chevarie Beckford</strong>, and I am currently pursuing a
+          <strong>Bachelor of Science in Computing</strong> at the <strong>University of Technology, Jamaica (UTech)</strong>.
+          I enjoy learning how technology works “under the hood” and I’m building my skills in web development and software design.
+        </p>
 
-    <p>
-        My name is Chevarie Beckford and I am currently pursuing a Bachelor of Science in Computing 
-        at the University of Technology, Jamaica.
-    </p>
+        <p>
+          I would describe myself as <strong>adaptable</strong>—I can adjust in any environment—plus ambitious and disciplined.
+          My career goal is to become a <strong>software engineer</strong> and develop systems that connect to the
+          <strong>computer engineering</strong> aspect of technology (reliable, scalable systems with strong foundations).
+        </p>
 
-    <p>
-        I am adaptable, ambitious, and disciplined. I aim to become a software engineer 
-        focused on building reliable and scalable systems.
-    </p>
+        <p>
+          I’m also interested in <strong>Artificial Intelligence</strong> because AI can solve real-world problems and improve efficiency.
+          My favorite song is <em>“Legend” by Chronixx</em> because it motivates me and connects to my identity and resilience.
+        </p>
 
-    <p>
-        I am also highly interested in Artificial Intelligence and how intelligent systems 
-        can improve efficiency and solve real-world problems.
-    </p>
+        <div class="quick-info">
+          <div><span>Student ID</span><strong>2405382</strong></div>
+          <div><span>Programme</span><strong>BSc Computing</strong></div>
+          <div><span>University</span><strong>UTech, Jamaica</strong></div>
+        </div>
 
-    <!-- Image (now path is different because index is in root) -->
-    <a href="mailto:chevariebeckford1@gmail.com">
-        <img src="Assets/me.jpg" alt="Photo of Chevarie Beckford">
-    </a>
+        <a class="primary-btn" href="resume.html">View My Resume</a>
+        <a class="ghost-btn" href="#favorites">My Favorites</a>
+      </div>
 
-</section>
-
-<section id="favorites">
-    <h2>Favorites</h2>
-
-    <ul>
-        <li><strong>Book:</strong> The 48 Laws of Power</li>
-        <li><strong>Movie:</strong> Gods of Egypt</li>
-        <li><strong>Song:</strong> Legend – Chronixx</li>
-    </ul>
-
-    <h3>Favorites Table</h3>
-
-    <table>
-        <tr>
-            <th>Category</th>
-            <th>Favorite</th>
-        </tr>
-        <tr>
-            <td>Book</td>
-            <td>The 48 Laws of Power</td>
-        </tr>
-        <tr>
-            <td>Movie</td>
-            <td>Gods of Egypt</td>
-        </tr>
-        <tr>
-            <td>Song</td>
-            <td>Legend – Chronixx</td>
-        </tr>
-    </table>
-</section>
-
-<section id="contact">
-    <h2>Contact</h2>
-    <p>Email: 
-        <a href="mailto:chevariebeckford1@gmail.com">
-            chevariebeckford1@gmail.com
+      <figure class="hero-img">
+        <!-- Image links to local mail client -->
+        <a href="mailto:chevariebeckford1@gmail.com" title="Email Chevarie">
+          <img src="../Assets/me.jpg" alt="Photo of Chevarie Beckford" class="profile-img">
         </a>
-    </p>
-</section>
+        <figcaption>Click my photo to email me.</figcaption>
+      </figure>
+    </section>
 
-<footer>
+    <section class="grid-2">
+      <section class="card" id="favorites">
+        <h2>Favorites</h2>
+
+        <!-- Table OR card-style section listing at least 3 favorites -->
+        <div class="fav-grid">
+          <article class="fav-card">
+            <h3>Book</h3>
+            <p><strong>The 48 Laws of Power</strong></p>
+          </article>
+
+          <article class="fav-card">
+            <h3>Movie</h3>
+            <p><strong>Gods of Egypt</strong></p>
+          </article>
+
+          <article class="fav-card">
+            <h3>Song</h3>
+            <p><strong>Chronixx — “Legend”</strong></p>
+          </article>
+        </div>
+
+        <!-- At least one list -->
+        <h3>Top Goals (2026)</h3>
+        <ol class="list">
+          <li>Improve my web programming skills (HTML/CSS).</li>
+          <li>Build more real-world projects for my portfolio.</li>
+          <li>Learn more about Artificial Intelligence.</li>
+        </ol>
+      </section>
+
+      <section class="card" id="contact">
+        <h2>Contact</h2>
+        <p>
+          Email:
+          <a href="mailto:chevariebeckford1@gmail.com">chevariebeckford1@gmail.com</a>
+        </p>
+
+        <!-- External hyperlink (required) -->
+        <p>
+          GitHub:
+          <a href="https://github.com/cbeckford2405382utech" target="_blank" rel="noopener">
+            github.com/cbeckford2405382utech
+          </a>
+        </p>
+
+        <!-- Bookmark link required -->
+        <p class="small">
+          <a href="#top">Back to top ↑</a>
+        </p>
+      </section>
+    </section>
+  </main>
+
+  <footer class="footer">
     <p>&copy; 2026 Chevarie Beckford</p>
-</footer>
-
+  </footer>
 </body>
 </html>
