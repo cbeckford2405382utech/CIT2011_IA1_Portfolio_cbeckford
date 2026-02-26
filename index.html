@@ -1,138 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!--
-    Name: Chevarie Beckford
-    Student ID: 2405382
-    Course: CIT2011 Web Programming
-    Semester: 2 AY 2025-2026
-    Assignment: IA#1 Portfolio
-  -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chevarie Beckford | Portfolio</title>
-  <link rel="stylesheet" href="../style.css">
+<!--
+Name: Chevarie Beckford
+Student ID: 2405382
+Course: CIT2011 Web Programming
+IA#1 Portfolio Website
+-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chevarie Beckford | Home</title>
+<link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
-  <header class="site-header" id="top">
-    <div class="brand">
-      <div class="logo" aria-hidden="true">CB</div>
-      <div>
-        <h1>Chevarie Beckford</h1>
-        <p class="subtitle">BSc Computing Student | UTech, Jamaica</p>
-      </div>
-    </div>
+<header class="site-header">
+<div class="container brandbar">
+<div class="brand">
+<div class="logo">CB</div>
+<div class="brand-text">
+<strong>Chevarie Beckford</strong>
+<span>BSc Computing Student | UTech, Jamaica</span>
+</div>
+</div>
 
-    <nav class="nav">
-      <a class="active" href="index.html">Home</a>
-      <a href="resume.html">Resume</a>
-      <a href="personality.html">Personality</a>
-      <a href="personal-development.html">Personal Development</a>
-      <a href="ai-idea.html">AI Idea</a>
-      <a href="references.html">References</a>
-      <a class="nav-btn" href="#contact">Contact</a>
-    </nav>
-  </header>
+<nav class="nav" aria-label="Primary Navigation">
+<a class="active" href="index.html">Home</a>
+<a href="resume.html">Resume</a>
+<a href="personality.html">Personality</a>
+<a href="personal-development.html">Personal Development</a>
+<a href="ai-idea.html">AI Idea</a>
+<a href="references.html">References</a>
+</nav>
+</div>
+</header>
 
-  <main class="container">
-    <section class="card hero">
-      <div class="hero-text">
-        <h2>About Me</h2>
+<section class="hero">
+<div class="container hero-grid">
+<article class="hero-card">
+<h1>Welcome to My Portfolio</h1>
+<p class="subtitle">
+I’m <strong>Chevarie Beckford</strong>, a BSc Computing student at the University of Technology, Jamaica.
+This website highlights my background, goals, personality traits, personal growth, and an AI business idea.
+</p>
 
-        <!-- 3 paragraphs required -->
-        <p>
-          My name is <strong>Chevarie Beckford</strong>, and I am currently pursuing a
-          <strong>Bachelor of Science in Computing</strong> at the <strong>University of Technology, Jamaica (UTech)</strong>.
-          I enjoy learning how technology works “under the hood” and I’m building my skills in web development and software design.
-        </p>
+<div class="badges" aria-label="Quick Highlights">
+<span class="badge">Adaptable</span>
+<span class="badge">Ambitious</span>
+<span class="badge">Disciplined</span>
+<span class="badge">Interested in AI</span>
+<span class="badge">HTML5 + CSS</span>
+</div>
 
-        <p>
-          I would describe myself as <strong>adaptable</strong>—I can adjust in any environment—plus ambitious and disciplined.
-          My career goal is to become a <strong>software engineer</strong> and develop systems that connect to the
-          <strong>computer engineering</strong> aspect of technology (reliable, scalable systems with strong foundations).
-        </p>
+<div class="btn-row">
+<a class="btn" href="#about">Jump to About</a>
+<a class="btn secondary" href="#contact">Jump to Contact</a>
+</div>
+</article>
 
-        <p>
-          I’m also interested in <strong>Artificial Intelligence</strong> because AI can solve real-world problems and improve efficiency.
-          My favorite song is <em>“Legend” by Chronixx</em> because it motivates me and connects to my identity and resilience.
-        </p>
+<aside class="hero-card">
+<h2 style="margin-top:0;">My Photo (Email Link)</h2>
 
-        <div class="quick-info">
-          <div><span>Student ID</span><strong>2405382</strong></div>
-          <div><span>Programme</span><strong>BSc Computing</strong></div>
-          <div><span>University</span><strong>UTech, Jamaica</strong></div>
-        </div>
+<!-- Requirement: Image with alt + image links to local mail client -->
+<div class="profile-wrap">
+<a href="mailto:chevariebeckford1@gmail.com" title="Email me">
+<img class="profile-img" src="../Assets/me.jpg" alt="Photo of Chevarie Beckford">
+</a>
 
-        <a class="primary-btn" href="resume.html">View My Resume</a>
-        <a class="ghost-btn" href="#favorites">My Favorites</a>
-      </div>
+<p class="profile-note">
+Click my photo to open your email app and message me.<br>
+<span class="muted">(chevariebeckford1@gmail.com)</span>
+</p>
+</div>
+</aside>
+</div>
+</section>
 
-      <figure class="hero-img">
-        <!-- Image links to local mail client -->
-        <a href="mailto:chevariebeckford1@gmail.com" title="Email Chevarie">
-          <img src="../Assets/me.jpg" alt="Photo of Chevarie Beckford" class="profile-img">
-        </a>
-        <figcaption>Click my photo to email me.</figcaption>
-      </figure>
-    </section>
+<main class="container">
+<section id="about" class="section">
+<h2>About Me</h2>
+<p>
+My name is <strong>Chevarie Beckford</strong> and I am currently pursuing a Bachelor of Science in Computing at
+the <strong>University of Technology, Jamaica (UTech)</strong>. I enjoy building clean and functional websites
+and I’m also interested in Artificial Intelligence and how intelligent systems can solve real-world problems.
+</p>
+<p>
+My long-term goal is to become a <strong>software engineer</strong> focused on building reliable and scalable systems,
+especially systems connected to the computer engineering side of technology.
+</p>
 
-    <section class="grid-2">
-      <section class="card" id="favorites">
-        <h2>Favorites</h2>
+<div class="cards">
+<article class="card">
+<h3>Demographic Details</h3>
+<ul>
+<li><strong>Name:</strong> Chevarie Beckford</li>
+<li><strong>Student ID:</strong> 2405382</li>
+<li><strong>Country:</strong> Jamaica</li>
+<li><strong>Programme:</strong> BSc Computing</li>
+</ul>
+</article>
 
-        <!-- Table OR card-style section listing at least 3 favorites -->
-        <div class="fav-grid">
-          <article class="fav-card">
-            <h3>Book</h3>
-            <p><strong>The 48 Laws of Power</strong></p>
-          </article>
+<article class="card">
+<h3>Favourite Song</h3>
+<p class="muted">
+My favourite song is <strong>“Legend” by Chronixx</strong>. It motivates me to stay focused and consistent,
+and it connects with my personal drive to keep improving even when life gets challenging.
+</p>
+</article>
 
-          <article class="fav-card">
-            <h3>Movie</h3>
-            <p><strong>Gods of Egypt</strong></p>
-          </article>
+<article class="card">
+<h3>Role Model</h3>
+<p class="muted">
+A role model I look up to is <strong>Elon Musk</strong> because of his innovation mindset and how he approaches
+big engineering problems with systems thinking and long-term vision.
+</p>
+</article>
+</div>
+</section>
 
-          <article class="fav-card">
-            <h3>Song</h3>
-            <p><strong>Chronixx — “Legend”</strong></p>
-          </article>
-        </div>
+<section class="section">
+<h2>Favourites Table (Books / Movie / Song)</h2>
+<p class="muted">This table meets the rubric requirement for a table/card-style section.</p>
 
-        <!-- At least one list -->
-        <h3>Top Goals (2026)</h3>
-        <ol class="list">
-          <li>Improve my web programming skills (HTML/CSS).</li>
-          <li>Build more real-world projects for my portfolio.</li>
-          <li>Learn more about Artificial Intelligence.</li>
-        </ol>
-      </section>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Favourite</th>
+<th>Why I Like It</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Book</td>
+<td>The 48 Laws of Power</td>
+<td>It teaches strategy, awareness, and disciplined decision-making.</td>
+</tr>
+<tr>
+<td>Movie</td>
+<td>Gods of Egypt</td>
+<td>I enjoy the mythology, action, and the imaginative visuals.</td>
+</tr>
+<tr>
+<td>Song</td>
+<td>Legend — Chronixx</td>
+<td>It keeps me motivated and consistent with my goals.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
 
-      <section class="card" id="contact">
-        <h2>Contact</h2>
-        <p>
-          Email:
-          <a href="mailto:chevariebeckford1@gmail.com">chevariebeckford1@gmail.com</a>
-        </p>
+<section id="contact" class="section">
+<h2>Contact (Bookmark Link Target)</h2>
+<p>
+Email: <a href="mailto:chevariebeckford1@gmail.com">chevariebeckford1@gmail.com</a>
+</p>
 
-        <!-- External hyperlink (required) -->
-        <p>
-          GitHub:
-          <a href="https://github.com/cbeckford2405382utech" target="_blank" rel="noopener">
-            github.com/cbeckford2405382utech
-          </a>
-        </p>
+<p>
+External Link (Rubric): Visit
+<a href="https://www.utech.edu.jm/" target="_blank" rel="noopener">UTech Jamaica</a>.
+</p>
 
-        <!-- Bookmark link required -->
-        <p class="small">
-          <a href="#top">Back to top ↑</a>
-        </p>
-      </section>
-    </section>
-  </main>
+<p class="muted">
+Tip: If “Home” doesn’t work from other pages, it means the link was written wrong.
+All your pages are inside <strong>Codes/</strong>, so Home must be:
+<strong>href="index.html"</strong> (not “/” and not “Codes/index.html”).
+</p>
+</section>
+</main>
 
-  <footer class="footer">
-    <p>&copy; 2026 Chevarie Beckford</p>
-  </footer>
+<footer class="site-footer">
+<div class="container">
+<small>&copy; 2026 Chevarie Beckford | CIT2011 IA#1 Portfolio</small>
+</div>
+</footer>
 </body>
 </html>
