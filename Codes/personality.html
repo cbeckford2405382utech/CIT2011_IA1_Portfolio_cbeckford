@@ -1,84 +1,77 @@
-<!--
-  NAME: Chevarie Beckford
-  ID#: 2405382
-  COURSE: CIT2011 Web Programming
-  ASSIGNMENT: IA#1 Portfolio (Semester 2 AY25-26)
--->
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!--
+    Name: Chevarie Beckford
+    Student ID: 2405382
+    Course: CIT2011 Web Programming
+    Semester: 2 AY 2025-2026
+    Assignment: IA#1 Portfolio
+  -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Personality | Chevarie Beckford</title>
   <link rel="stylesheet" href="../style.css">
 </head>
+
 <body>
-  <div class="container">
-
-    <header class="site-header">
-      <div class="logo">
-        <div class="logo-badge">CB</div>
-        <div>
-          <h1>Personality</h1>
-          <p class="subtitle">Traits, role model, and what drives me</p>
-        </div>
+  <header class="site-header">
+    <div class="brand">
+      <div class="logo" aria-hidden="true">CB</div>
+      <div>
+        <h1>Personality</h1>
+        <p class="subtitle">My strongest traits and what drives me</p>
       </div>
+    </div>
 
-      <nav class="nav" aria-label="Primary">
-        <a href="index.html">Home</a>
-        <a href="resume.html">Resume</a>
-        <a href="personality.html">Personality</a>
-        <a href="personal-development.html">Personal Development</a>
-        <a href="ai-idea.html">AI Idea</a>
-        <a href="references.html">References</a>
-      </nav>
-    </header>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="resume.html">Resume</a>
+      <a class="active" href="personality.html">Personality</a>
+      <a href="personal-development.html">Personal Development</a>
+      <a href="ai-idea.html">AI Idea</a>
+      <a href="references.html">References</a>
+    </nav>
+  </header>
 
-    <main>
+  <main class="container">
+    <section class="card">
+      <h2>Top 3 Traits</h2>
 
-      <section class="section">
-        <h2>Top 3 Personality Traits</h2>
-        <ol>
-          <li><strong>Adaptable:</strong> I adjust in any environment and figure out what needs to be done.</li>
-          <li><strong>Ambitious:</strong> I set big targets for myself and don’t like staying average.</li>
-          <li><strong>Disciplined:</strong> I push through even when it gets hard, because consistency wins.</li>
-        </ol>
+      <div class="fav-grid">
+        <article class="fav-card">
+          <h3>Adaptable</h3>
+          <p>I can adjust in any environment. This helps me handle new modules, new tools, and tight deadlines.</p>
+        </article>
 
-        <p>
-          These traits help me in school because I can handle deadlines, learn new tools quickly, and keep improving
-          even when the work is stressful.
-        </p>
-      </section>
+        <article class="fav-card">
+          <h3>Ambitious</h3>
+          <p>I set big goals and push myself to grow. It keeps me focused on high grades and strong projects.</p>
+        </article>
 
-      <section class="section">
-        <h2>Role Model</h2>
-        <p>
-          My role model is <strong>Elon Musk</strong>. I respect the mindset of building complex systems, thinking at scale,
-          and taking ideas from concept to real-world impact.
-        </p>
+        <article class="fav-card">
+          <h3>Disciplined</h3>
+          <p>I stay consistent with practice and learning. Discipline helps me finish tasks even when it’s stressful.</p>
+        </article>
+      </div>
+    </section>
 
-        <h3>Quote / Motto</h3>
-        <p>
-          <strong>“Discipline beats motivation.”</strong>  
-          I remind myself that results come from the work I do every day, not just how I feel in the moment.
-        </p>
-      </section>
+    <section class="card">
+      <h2>Role Model</h2>
+      <p>
+        My role model is <strong>Elon Musk</strong> because I admire innovation, systems thinking, and building technology at a large scale.
+        That mindset inspires me to think beyond just “passing” and to build real, useful systems.
+      </p>
 
-      <section class="section">
-        <h2>Favorite Scene (Personal Motivation)</h2>
-        <p>
-          I don’t just look for entertainment — I look for moments that push me. My favorite moments are scenes where
-          the main character refuses to quit, even when everything is against them. That’s the energy I carry into
-          school and my goals.
-        </p>
-      </section>
+      <h3>Motivation</h3>
+      <p>
+        My favorite song is <strong>“Legend” by Chronixx</strong> because it motivates me and connects to my identity and resilience.
+      </p>
+    </section>
+  </main>
 
-    </main>
-
-    <footer>
-      <p>&copy; 2026 Chevarie Beckford</p>
-    </footer>
-
-  </div>
+  <footer class="footer">
+    <p>&copy; 2026 Chevarie Beckford</p>
+  </footer>
 </body>
 </html>
