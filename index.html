@@ -10,7 +10,9 @@ IA#1 Portfolio Website
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Chevarie Beckford | Home</title>
-<link rel="stylesheet" href="../style.css">
+
+<!-- ROOT index.html → style.css is also in ROOT -->
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -24,13 +26,14 @@ IA#1 Portfolio Website
 </div>
 </div>
 
+<!-- All other HTML pages are inside Codes/ -->
 <nav class="nav" aria-label="Primary Navigation">
 <a class="active" href="index.html">Home</a>
-<a href="resume.html">Resume</a>
-<a href="personality.html">Personality</a>
-<a href="personal-development.html">Personal Development</a>
-<a href="ai-idea.html">AI Idea</a>
-<a href="references.html">References</a>
+<a href="Codes/resume.html">Resume</a>
+<a href="Codes/personality.html">Personality</a>
+<a href="Codes/personal-development.html">Personal Development</a>
+<a href="Codes/ai-idea.html">AI Idea</a>
+<a href="Codes/references.html">References</a>
 </nav>
 </div>
 </header>
@@ -64,7 +67,8 @@ This website highlights my background, goals, personality traits, personal growt
 <!-- Requirement: Image with alt + image links to local mail client -->
 <div class="profile-wrap">
 <a href="mailto:chevariebeckford1@gmail.com" title="Email me">
-<img class="profile-img" src="../Assets/me.jpg" alt="Photo of Chevarie Beckford">
+<!-- ROOT index.html → Assets folder is also in ROOT -->
+<img class="profile-img" src="Assets/me.jpg" alt="Photo of Chevarie Beckford">
 </a>
 
 <p class="profile-note">
@@ -161,12 +165,6 @@ Email: <a href="mailto:chevariebeckford1@gmail.com">chevariebeckford1@gmail.com<
 <p>
 External Link (Rubric): Visit
 <a href="https://www.utech.edu.jm/" target="_blank" rel="noopener">UTech Jamaica</a>.
-</p>
-
-<p class="muted">
-Tip: If “Home” doesn’t work from other pages, it means the link was written wrong.
-All your pages are inside <strong>Codes/</strong>, so Home must be:
-<strong>href="index.html"</strong> (not “/” and not “Codes/index.html”).
 </p>
 </section>
 </main>
